@@ -1,0 +1,34 @@
+# 'EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.;
+
+SET UNDO_LOG OFF;
+# Take all libraries out of use
+USE -*;
+#
+# SHEET 1 - MIGRATE PARTS
+#
+EDIT .s1
+# Migrate parts to 'C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr'
+USE 'C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr';
+# Take 'C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr' out of use
+USE '-C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr';
+#
+# SHEET 2 - MIGRATE PARTS
+#
+EDIT .s2
+# Migrate parts to 'C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr'
+USE 'C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr';
+REPLACE X4 5566-20;
+# Take 'C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr' out of use
+USE '-C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr';
+#
+# SHEET 3 - MIGRATE PARTS
+#
+EDIT .s3
+# Migrate parts to 'C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr'
+USE 'C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr';
+# Take 'C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr' out of use
+USE '-C:/Users/Abrar Ashraf/OneDrive/Documents/EAGLE/projects/CT63_miftysety/con-molex.lbr';
+EDIT .s1
+SET UNDO_LOG ON;
+# Put all libraries back into use
+USE *;
